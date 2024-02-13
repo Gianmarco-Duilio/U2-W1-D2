@@ -417,7 +417,7 @@ h1 span img {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 70px;
+  font-size: 50px;
   opacity: 0.1;
 }
 
@@ -429,13 +429,45 @@ footer button {
   background-color: rgba(255, 255, 255, 0.541);
   border-radius: 5px;
   border: solid white;
+  position: fixed;
+  right: 0;
 }
 .button1 {
   color: #3f6bca;
+  margin-bottom: 120px;
 }
 .button2 {
   color: #3f6bca;
+  margin-bottom: 60px;
 }
 .button3 {
   color: #ca3f3f;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 699px) {
+  footer button {
+    padding: 10px 14px;
+    bottom: 50px;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer button {
+    padding: 10px 14px;
+  }
+
+  .button1 {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 0;
+  }
+  .button2 {
+    position: fixed;
+    z-index: 3;
+    top: 100px;
+    right: 0;
+  }
+  .button3 {
+    bottom: 50px;
+  }
 }
