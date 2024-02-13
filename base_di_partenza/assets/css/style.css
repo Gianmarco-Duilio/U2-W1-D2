@@ -431,7 +431,10 @@ footer button {
   border: solid white;
   position: fixed;
   right: 0;
+  padding: 10px 14px;
+  bottom: 50px;
 }
+
 .button1 {
   color: #3f6bca;
   margin-bottom: 120px;
@@ -444,15 +447,10 @@ footer button {
   color: #ca3f3f;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 699px) {
-  footer button {
-    padding: 10px 14px;
-    bottom: 50px;
-  }
-}
+
 @media screen and (min-width: 700px) {
   footer button {
-    padding: 10px 14px;
+    bottom: unset;
   }
 
   .button1 {
